@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Calculator</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2 class="text-center mb-4">Financial Calculator</h2>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-dark" id="dark-mode-toggle"><i class="fas fa-moon"></i> Toggle Dark Mode</button>
+    </div>
+
+    <div class="card mb-4">
+      <h3 class="card-title">Account Balance</h3>
+      <div class="form-group">
+        <label for="deposit-amount">Deposit Amount</label>
+        <input type="number" id="deposit-amount" class="form-control" placeholder="Enter amount to deposit">
+      </div>
+      <button class="btn btn-primary" id="deposit-btn">Deposit</button>
+
+      <div class="form-group mt-3">
+        <label for="withdraw-amount">Withdraw Amount</label>
+        <input type="number" id="withdraw-amount" class="form-control" placeholder="Enter amount to withdraw">
+      </div>
+      <button class="btn btn-danger" id="withdraw-btn">Withdraw</button>
+
+      <h4 class="mt-3">Current Balance: <span id="balance">$0.00</span></h4>
+    </div>
+
+    <div class="card mb-4">
+      <h3 class="card-title">CD (Certificate of Deposit) Calculator</h3>
+      <div class="form-group">
+        <label for="cd-amount">CD Amount</label>
+        <input type="number" id="cd-amount" class="form-control" placeholder="Enter amount to invest in CD">
+      </div>
+      <div class="form-group">
+        <label for="cd-rate">Interest Rate (%)</label>
+        <input type="number" id="cd-rate" class="form-control" placeholder="Enter interest rate">
+      </div>
+      <div class="form-group">
+        <label for="cd-years">Years</label>
+        <input type="number" id="cd-years" class="form-control" placeholder="Enter number of years">
+      </div>
+      <button class="btn btn-primary" id="cd-btn">Invest in CD</button>
+      <h4 class="mt-3">Final Value: $<span id="cd-value">0.00</span></h4>
+
+      <canvas id="cd-growth-chart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="card mb-4">
+      <h3 class="card-title">Loan Calculator</h3>
+      <div class="form-group">
+        <label for="loan-amount">Loan Amount</label>
+        <input type="number" id="loan-amount" class="form-control" placeholder="Enter loan amount">
+      </div>
+      <div class="form-group">
+        <label for="loan-rate">Interest Rate (%)</label>
+        <input type="number" id="loan-rate" class="form-control" placeholder="Enter interest rate">
+      </div>
+      <div class="form-group">
+        <label for="loan-term">Loan Term (Years)</label>
+        <input type="number" id="loan-term" class="form-control" placeholder="Enter loan term in years">
+      </div>
+      <button class="btn btn-success" id="loan-btn">Take Loan</button>
+      <h4 class="mt-3">Loan Balance: $<span id="loan-balance">0.00</span></h4>
+    </div>
+
+    <div class="card mb-4">
+      <h3 class="card-title">Transaction History</h3>
+      <ul id="transaction-history" class="list-group">
+        <!-- Transaction History will be populated here -->
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    transition: all 0.3s ease;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin-top: 30px;
+  }
+  
+  .card {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .card-title {
+    font-weight: 600;
+  }
+  
+  .btn {
+    font-weight: 600;
+  }
+  
+  #balance, #loan-balance, #cd-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  canvas {
+    margin-top: 20px;
+  }
+  
+  .dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+  
+  .dark-mode .card {
+    background-color: #1e1e1e;
+    border-color: #444;
+  }
+  
+  .dark-mode .form-control {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  .dark-mode .btn-primary {
+    background-color: #0069d9;
+    border-color: #005cbf;
+  }
+  
+  .dark-mode .btn-danger {
+    background-color: #dc3545;
+    border-color: #c82333;
+  }
+  
+  .dark-mode .btn-success {
+    background-color: #28a745;
+    border-color: #218838;
+  }
+  
+  .dark-mode .btn-dark {
+    background-color: #343a40;
+    border-color: #23272b;
+  }
+  
